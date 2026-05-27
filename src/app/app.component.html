@@ -1,0 +1,12 @@
+<h1>Gacha Simulator v1</h1>
+<h1 *ngIf="lastTenPulls.length === 0">You pulled: {{ result }}</h1>
+
+<div *ngIf="lastTenPulls.length > 0" class="pulls">
+  <h1>You pulled:&nbsp;</h1>
+  <h1 *ngFor="let character of lastTenPulls">{{ character }},&nbsp;</h1>
+</div>
+
+<button (click)="pullCharacter(true)">Pull 1x</button>
+<button (click)="pullTenCharacters()">Pull 10x</button>
+
+<p>Pull count: {{ pullCount }}</p>

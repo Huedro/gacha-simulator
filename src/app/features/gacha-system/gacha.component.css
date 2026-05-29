@@ -1,0 +1,18 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.banner-wrapper {
+  border-radius: 25px;
+  width: 80vw;
+  height: 80vh;
+  background-color: #252526;
+  padding: 20px 50px;
+}
